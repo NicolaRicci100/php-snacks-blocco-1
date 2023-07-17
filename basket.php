@@ -1,19 +1,19 @@
 <?php
 $games = [
   [
-    'first_team' => 'Boston Celtics',
-    'second_team' => 'Miami Heat',
+    'location' => 'Madison Square Garden',
+    'teams' => ['New York Knicks', 'Boston Celtics'],
+    'points' => '115 - 121'
+  ],
+  [
+    'location' => 'Little Caesars Arena',
+    'teams' => ['Miami Heat', 'Boston Celtics'],
+    'points' => '109 - 116'
+  ],
+  [
+    'location' => 'United Center',
+    'teams' => ['Chicago Bulls', 'Boston Celtics'],
     'points' => '104 - 111'
-  ],
-  [
-    'first_team' => 'Boston Celtics',
-    'second_team' => 'Chicago Bulls',
-    'points' => '123 - 119'
-  ],
-  [
-    'first_team' => 'Boston Celtics',
-    'second_team' => 'Washington Wizards',
-    'points' => '130 - 121'
   ]
 ];
 var_dump($games)
