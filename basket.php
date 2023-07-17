@@ -1,5 +1,22 @@
 <?php
-
+$games = [
+  [
+    'first_team' => 'Boston Celtics',
+    'second_team' => 'Miami Heat',
+    'points' => '104 - 111'
+  ],
+  [
+    'first_team' => 'Boston Celtics',
+    'second_team' => 'Chicago Bulls',
+    'points' => '123 - 119'
+  ],
+  [
+    'first_team' => 'Boston Celtics',
+    'second_team' => 'Washington Wizards',
+    'points' => '130 - 121'
+  ]
+];
+var_dump($games)
 ?>
 
 
@@ -16,9 +33,9 @@
 </head>
 
 <body>
-  <div>
-
-  </div>
+  <ul>
+    <?php  ?>
+  </ul>
 </body>
 
 </html>
