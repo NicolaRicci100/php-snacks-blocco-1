@@ -2,7 +2,6 @@
 $name = $_GET['name'];
 $age = $_GET['age'];
 $email = $_GET['email'];
-
 ?>
 
 
@@ -20,9 +19,11 @@ $email = $_GET['email'];
 </head>
 
 <body>
-  <div>Il nome è: <?= $name ?></div>
-  <div>L'età è: <?= $age ?></div>
-  <div>La mail è: <?= $email ?></div>
+  <?php if ((is_numeric(trim($age))) && strlen(trim($name)) > 3 && str_contains($email, '@') && str_contains($email, '.')) : ?>
+    <h2 class="text-success text-center m-5">ACCESSO RIUSCITO</h2>
+  <?php else : ?>
+    <h2 class="text-danger text-center m-5">ACCESSO NEGATO</h2>
+  <?php endif ?>
 </body>
 
 </html>
