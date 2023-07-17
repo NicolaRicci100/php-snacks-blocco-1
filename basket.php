@@ -16,7 +16,6 @@ $games = [
     'points' => '104 - 111'
   ]
 ];
-var_dump($games)
 ?>
 
 
@@ -33,9 +32,13 @@ var_dump($games)
 </head>
 
 <body>
-  <ul>
-    <?php  ?>
-  </ul>
+  <div>
+    <?php for ($i = 0; $i < count($games); $i++) : ?>
+      <div>
+        <strong><?= $games[$i]['location'] ?> - </strong><?= $games[$i]['teams'][00] . ' vs ' . $games[$i]['teams'][01] ?> | <?= $games[$i]['points'] ?>
+      </div>
+    <?php endfor ?>
+  </div>
 </body>
 
 </html>
